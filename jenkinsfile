@@ -13,8 +13,7 @@ pipeline {
                 bat 'mvn test'
             }
         }
-
-        stage('Package') {
+       stage('Package') {
             steps {
                 echo 'Packaging...'
                 bat 'mvn package'
@@ -32,6 +31,5 @@ pipeline {
                 bat 'mvn deploy'
             }
         }
-
     }
 }
